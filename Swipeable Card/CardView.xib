@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DraggableView" customModule="Swipeable_Card" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="290"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0A-Yd-nRK">
+                    <rect key="frame" x="16" y="76" width="354" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6LK-hK-CgR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gQ-Z0-W5U">
+                    <rect key="frame" x="0.0" y="0.0" width="386" height="181"/>
+                    <color key="backgroundColor" red="0.46708049759999998" green="1" blue="0.073859322500000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzD-BV-jBT">
+                    <rect key="frame" x="297" y="197" width="84" height="51"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="0Cp-98-2ba"/>
+                        <constraint firstAttribute="width" constant="84" id="whR-gP-nNF"/>
+                    </constraints>
+                    <color key="tintColor" red="0.85098039219999999" green="0.86666666670000003" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="checkButton">
+                        <color key="titleColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bn-MQ-HV5">
+                    <rect key="frame" x="5" y="197" width="60" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="TZq-eq-kNU"/>
+                        <constraint firstAttribute="width" constant="60" id="x3q-mf-SLV"/>
+                    </constraints>
+                    <state key="normal" image="xButton"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lKB-Mv-AKq">
+                    <rect key="frame" x="73" y="20" width="240" height="128"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="1gQ-Z0-W5U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4N8-EC-mwh"/>
+                <constraint firstAttribute="trailing" secondItem="xzD-BV-jBT" secondAttribute="trailing" constant="5" id="5wr-Yx-d0k"/>
+                <constraint firstItem="U0A-Yd-nRK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="8qo-ma-EVh"/>
+                <constraint firstAttribute="bottom" secondItem="1gQ-Z0-W5U" secondAttribute="bottom" constant="109" id="CHz-Kz-m2M"/>
+                <constraint firstItem="xzD-BV-jBT" firstAttribute="top" secondItem="2bn-MQ-HV5" secondAttribute="top" id="Ewn-0R-zbL"/>
+                <constraint firstAttribute="bottom" secondItem="2bn-MQ-HV5" secondAttribute="bottom" constant="42" id="Mt8-LZ-2CG"/>
+                <constraint firstItem="2bn-MQ-HV5" firstAttribute="top" secondItem="1gQ-Z0-W5U" secondAttribute="bottom" constant="16" id="Nfg-mP-r3h"/>
+                <constraint firstItem="lKB-Mv-AKq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Nkt-f8-aAb"/>
+                <constraint firstItem="1gQ-Z0-W5U" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Oxv-s0-I4Z"/>
+                <constraint firstAttribute="trailing" secondItem="lKB-Mv-AKq" secondAttribute="trailing" constant="73" id="SfB-Zn-z3V"/>
+                <constraint firstAttribute="trailing" secondItem="1gQ-Z0-W5U" secondAttribute="trailing" id="XII-dk-Z5Z"/>
+                <constraint firstItem="lKB-Mv-AKq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="73" id="ZFl-3x-XuX"/>
+                <constraint firstItem="2bn-MQ-HV5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="cZD-kh-WWY"/>
+                <constraint firstAttribute="trailing" secondItem="U0A-Yd-nRK" secondAttribute="trailing" constant="16" id="eTa-gC-O0H"/>
+                <constraint firstItem="U0A-Yd-nRK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="76" id="k9N-Je-iVO"/>
+                <constraint firstItem="xzD-BV-jBT" firstAttribute="top" secondItem="lKB-Mv-AKq" secondAttribute="bottom" constant="49" id="wj8-YF-mLn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="1gQ-Z0-W5U"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="btnCancel" destination="2bn-MQ-HV5" id="7sy-tJ-gc2"/>
+                <outlet property="btnDone" destination="xzD-BV-jBT" id="KQA-aB-y0O"/>
+                <outlet property="containerView" destination="1gQ-Z0-W5U" id="JCp-D7-rdg"/>
+                <outlet property="imgOverlay" destination="lKB-Mv-AKq" id="hia-ra-Ni8"/>
+                <outlet property="lbltitle" destination="U0A-Yd-nRK" id="JfF-gd-P0O"/>
+                <outletCollection property="gestureRecognizers" destination="Q6U-JN-2R6" appends="YES" id="FMr-WT-9DS"/>
+            </connections>
+            <point key="canvasLocation" x="66" y="53"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="Q6U-JN-2R6">
+            <connections>
+                <action selector="Dragged:" destination="iN0-l3-epB" id="aos-zo-Ebv"/>
+                <outlet property="delegate" destination="iN0-l3-epB" id="BE8-0x-hGM"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="checkButton" width="60" height="60"/>
+        <image name="xButton" width="60" height="60"/>
+    </resources>
+</document>
